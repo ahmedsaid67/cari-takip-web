@@ -27,11 +27,11 @@ export default function Iletisim() {
                 <h2>İletişim Bilgileri:</h2>
                 <div className={styles.klasikonuştur}>
                   <FaPhone className={styles.icon} />
-                  <p>(+90) 507 704-6141</p>
+                  <p>(+90) 506 940 5414</p>
                 </div>
                 <div className={styles.klasikonuştur}>
                   <FaPhone className={styles.icon} />
-                  <p>(+90) 531 918-3467</p>
+                  <p>(+90) 531 918 3467</p>
                 </div>
                 <div className={styles.klasikonuştur}>
                   <FaEnvelope className={styles.icon} />
