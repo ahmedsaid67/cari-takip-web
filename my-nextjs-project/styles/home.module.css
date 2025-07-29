@@ -1,0 +1,363 @@
+/* First Section Styles */
+.firstContainer {
+  padding: 4.5% 6%;
+  display: flex;
+  background-color: #000;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 32.5rem;
+  height: 100%;
+}
+
+.anaSliderContainer {
+  height: 100%;
+}
+
+
+
+.textContainer h1,
+.textContainer h2 {
+  margin: 0;
+  font-size: 3.25rem;
+  color: #fff;
+  line-height: 3.75rem;
+}
+
+.textContainer h1{
+  color:#1D64F2;
+}
+
+.textContainer p {
+  margin: 6% 0;
+  color: #fff;
+  line-height: 1.65rem; /* Satırlar arası boşluk */
+  font-size: 1.25rem;
+}
+
+
+
+.anaSliderContainer {
+  display: flex;
+  position: relative;
+  gap:2%;
+  transition: all 0.3s ease;
+}
+
+.anaSliderContainer img {
+  width: 240px;
+  height: 464px;
+}
+
+.indirButton{
+  background-color: #1D64F2;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.6rem 1.2rem ;
+  font-size: 1.15rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.indirButton:hover{
+  background-color: #fff;
+  color: #1D64F2;
+}
+
+
+
+
+.sliderContainer {
+  padding: 3% 0 3% 0;
+  overflow: hidden; /* Hides the scrollbar */
+  position: relative;
+}
+
+
+.sliderContainer h2 {
+  margin: 0 0 3% 6%;
+  font-size: 2rem;
+}
+
+.imageContainerWrapper {
+  position: relative;
+}
+
+.imageContainer {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  gap: 1rem;
+}
+
+
+
+.imageContainer::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit browsers */
+}
+
+
+.sliderItem:first-child {
+  margin-left: 6%; /* Left margin for the first image */
+}
+
+.sliderItem:last-child {
+  margin-right: 6%; /* Right margin for the last image */
+}
+
+.responseItem {
+  background-color: #fff;
+  padding: 1rem;
+  width: 350px;
+  height: auto;
+  border-radius: 2rem;
+}
+
+
+
+.sliderItem img {
+  width: 350px;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+/* Container for arrow buttons */
+.arrowsContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 15px; /* Some padding to give space between arrows */
+  gap: 1rem;
+  margin-top: 3%;
+}
+
+/* Arrow buttons style */
+.arrowButton {
+  background-color: #d3d3d3; /* Light gray background */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  color: #333; /* Dark gray arrows */
+
+}
+
+.arrowButton.disabled {
+  background-color: #e2e2e2; /* Light gray background when disabled */
+  color: #b0b0b0; /* Lighter gray arrows when disabled */
+}
+
+.nextArrow{
+  margin-right: 6%;
+}
+
+
+.arrowButton svg {
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 1500px) {
+
+  .anaSliderContainer img {
+    width: 200px; /* 240 → 200 (örnek küçültme) */
+    height: 386px; /* orantılı: 464 × (200 / 240) = 386.66 */
+}
+}
+
+@media (max-width: 1275px) {
+
+  .anaSliderContainer img:first-child {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 1100px) {
+
+
+  .textContainer{
+    display: flex;
+    width: 30rem;
+    height: 100%;
+  }
+
+  .textContainer h1,
+  .textContainer h2 {
+
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .textContainer p {
+    line-height: 1.4rem; /* Satırlar arası boşluk */
+    font-size: 1rem;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .textContainer{
+    width: 27.5rem;
+  }
+
+  .anaSliderContainer img:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .firstContainer {
+    padding: 6% 4%;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 3.5rem;
+    background-color: #000;
+  }
+
+  .anaSliderContainer {
+    width: 100%;
+    gap: 2%;
+  }
+
+  .anaSliderContainer img:first-child {
+    display: block;
+  }
+
+  .anaSliderContainer img {
+    width: 32%;
+    height: auto;
+    
+  }
+
+  .textContainer{
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+  .textContainer h2 {
+    font-size: 2rem;
+    line-height: 2.35rem;
+    font-weight: 900;
+  }
+
+  .textContainer h1{
+    color:#1D64F2;
+    font-size: 2rem;
+    line-height: 2.35rem;
+    font-weight: 900;
+  }
+
+
+  .textContainer p {
+    line-height: 1.3rem; /* Satırlar arası boşluk */
+    font-size: 1rem;
+    margin-top: 4%; 
+    margin-bottom: 0;
+  }
+
+  /* .mobileHideBr{
+    display: none;
+  } */
+
+  .indirButton{
+    background-color: #1D64F2;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.55rem 1.1rem ;
+    font-size: 1rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: 8% 0;
+  }
+
+
+
+
+
+
+
+
+
+
+  .sliderContainer {
+    padding: 0 0 6% 0;
+  }
+  .sliderContainer h2 {
+    margin: 6% 0 6% 4%;
+    font-size: 1.5rem;
+  }
+  .sliderItem img {
+    width: 240px;
+    border-radius: 1.5rem;
+  }
+  
+  .imageContainer {
+    gap: 0.75rem;
+  }
+
+  .sliderItem:first-child {
+    margin-left: 4%; /* Left margin for the first image */
+  }
+  
+  .sliderItem:last-child {
+    margin-right: 4%; /* Right margin for the last image */
+  }
+
+  .responseItem:first-child {
+    margin-left: 4%; /* Left margin for the first image */
+  }
+  
+  .responseItem:last-child {
+    margin-right: 4%; /* Right margin for the last image */
+  }
+
+  .arrowsContainer {
+    gap: 0.8rem;
+    margin-top: 6%;
+  }
+
+  .arrowButton {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .nextArrow{
+    margin-right: 4%;
+  }
+  .arrowButton svg {
+    font-size: 1rem;
+  }
+}
+
+
+
+@media (min-width: 1920px) {
+
+  .arrowButton {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .firstContainer {
+    margin-top: 4rem;
+  }
+ 
+}
