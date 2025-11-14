@@ -76,10 +76,12 @@ const ImageSlider = () => {
           <h2>İndir</h2>
           {/* <Link href='/indir'> */}
             <div className={styles.indirContainer}>
-              <img src="/storeios.png" alt="Ölçek - İlaç ve Takviye Dozlama Uygulaması İndir - İos" />
-              {/* <a href="https://play.google.com/store/apps/details?id=com.olcekapp&utm_source=emea_OO" target="_blank" rel="noopener noreferrer"> */}
-                <img src="/storegoogle.png" alt="Ölçek - İlaç ve Takviye Dozlama Uygulaması İndir - Android" />
-              {/* </a> */}
+              <a href="https://apps.apple.com/us/app/flexsoft-cari-takip-muhasebe/id6751607216" target="_blank" rel="noopener noreferrer">
+              <img src="/storeios.png" alt="Flexsoft Cari Takip - Muhasebe Uygulaması İndir - İos" />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.caritakip" target="_blank" rel="noopener noreferrer">
+                <img src="/storegoogle.png" alt="Flexsoft Cari Takip - Muhasebe Uygulaması İndir - Android" />
+              </a>
             </div>
           {/* </Link> */}
         </div>
