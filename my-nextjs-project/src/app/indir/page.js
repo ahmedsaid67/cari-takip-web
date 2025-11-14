@@ -16,49 +16,58 @@ export default function Indir() {
       </div>
 
       <h1 className={styles.baslik}>
-        Flexsoft Cari Takip’i Hemen İndirin – Finansal Süreçlerinizi Güvenle Yönetin! (Pek Yakında...)
+        Flexsoft Cari Takip’i Hemen İndirin – Finansal Süreçlerinizi Güvenle Yönetin!
       </h1>
 
 
       <div className={styles.qrContainer}>
-        <div className={styles.playContainer}>
-          <div className={styles.playAltContainer}>
-            <h2>QR ile Yükle - iOS</h2>
-            <img
-              className={styles.qrImage}
-              src="/qrdeneme.jpeg"
-              alt="Ölçek | İlaç, Besin Takviyesi Doz Hesaplama ve Hatırlatma Uygulaması İndir QRCODE - Android"
-            />
-            <img
-              className={styles.urlImage}
-              src="/storeios.png"
-              alt="Ölçek : İlaç, Besin Takviyesi Doz Hesaplama ve Hatırlatma Uygulaması İndir - Android"
-            />
+          {/* iOS */}
+          <div className={styles.playContainer}>
+            <div className={styles.playAltContainer}>
+              <h2>QR ile Yükle - iOS</h2>
+              <img
+                className={styles.qrImage}
+                src="/frame.png"
+                alt="Flexsoft Cari Takip - iOS QR Kodu"
+              />
+              <a
+                href="https://apps.apple.com/us/app/flexsoft-cari-takip-muhasebe/id6751607216"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={styles.urlImage}
+                  src="/storeios.png"
+                  alt="Flexsoft Cari Takip - iOS App Store"
+                />
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div className={styles.iosContainer}>
-          <div className={styles.playAltContainer}>
-            <h2>QR ile Yükle - Android</h2>
-            <img
-              className={styles.qrImage}
-              src="/android-qr.png"
-              alt="Ölçek | İlaç, Besin Takviyesi Doz Hesaplama ve Hatırlatma Uygulaması İndir QRCODE - iOS"
-            />
-            {/* <a
-              className={styles.connectionContainer}
-              href="https://play.google.com/store/apps/details?id=com.olcekapp&utm_source=emea_OO"
-              target="_blank"
-              rel="noopener noreferrer"
-            > */}
-            <img
-              className={styles.urlImage}
-              src="/storegoogle.png"
-              alt="Ölçek: İlaç, Besin Takviyesi Doz Hesaplama ve Hatırlatma Uygulaması İndir - Android"
-            />
-            {/* </a> */}
+          {/* Android */}
+          <div className={styles.iosContainer}>
+            <div className={styles.playAltContainer}>
+              <h2>QR ile Yükle - Android</h2>
+              <img
+                className={styles.qrImage}
+                src="/frame2.png"
+                alt="Flexsoft Cari Takip - Android QR Kodu"
+              />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.caritakip"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={styles.urlImage}
+                  src="/storegoogle.png"
+                  alt="Flexsoft Cari Takip - Google Play"
+                />
+              </a>
+            </div>
           </div>
-        </div>
+
+
       </div>
     </div>
   );

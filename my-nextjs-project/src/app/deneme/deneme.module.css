@@ -1,0 +1,22 @@
+.container {
+  margin-top: 6rem;
+  min-height: calc(100vh - 4rem);
+  margin-left: 2rem;
+}
+
+.yuvarlakContainer {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+}
